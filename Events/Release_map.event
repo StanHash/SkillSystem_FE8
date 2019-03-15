@@ -195,6 +195,11 @@ LABEL 0
 	// end
 	
 	Text(HouseText)
+
+	FADI 0x10
+	STAL 0x10
+
+	ASMC RunSnek
 	
 	NoFade
 	ENDA
