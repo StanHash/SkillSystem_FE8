@@ -24,8 +24,12 @@
 
     //Maps
     #include "Maps/Master Map Installer.event"
-    
-    MESSAGE Used free space ends at currentOffset
+
+    ASSERT $C00000 - CURRENTOFFSET
+
+    ORG $1000000
+    #include "Engine Hacks/Snek/Snek.event"
+
 #else
     ERROR You are not assembling FE8 events!
 #endif
